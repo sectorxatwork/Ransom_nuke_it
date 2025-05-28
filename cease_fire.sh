@@ -41,5 +41,5 @@ tar -xzf "$DECRYPTED_ARCHIVE" -C "$DIR"
 # ---- 5. Cleanup --------------------------------------------------------------
 echo "  Cleaning up temporary files ..."
 rm "$DECRYPTED_ARCHIVE"
-rm /tmp/Hacked.jpg
+rm ~/Desktop/Hacked.jpg
 echo "Done. Folder restored to: $RESTORE_DIR"
